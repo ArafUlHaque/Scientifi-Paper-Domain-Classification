@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files and secrets
+.env
+.env.*
+
+# Raw datasets and downloaded data
+data/raw/
+data/external/
+data/downloads/
+data/*.csv
+data/*.tsv
+data/*.txt
+data/*.json
+data/*.jsonl
+data/*.xlsx
+data/*.xls
+data/*.zip
+data/*.rar
+data/*.7z
+data/*.tar
+data/*.tar.gz
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# Model checkpoints and trained models
+checkpoints/
+models/
+*.ckpt
+*.h5
+*.keras
+*.pt
+*.pth
+*.bin
+*.safetensors
+pytorch_model.bin
+tf_model.h5
+*.onnx
+
+# Hugging Face checkpoints/cache
+huggingface/
+hf_cache/
+transformers_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
