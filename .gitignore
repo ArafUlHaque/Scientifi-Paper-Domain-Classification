@@ -43,6 +43,10 @@ data/*.tar.gz
 # Model checkpoints and trained models
 checkpoints/
 models/
+results/checkpoints/
+results/histories/
+results/features/
+results/predictions/
 *.ckpt
 *.h5
 *.keras
@@ -58,6 +62,10 @@ tf_model.h5
 huggingface/
 hf_cache/
 transformers_cache/
+
+# Local runtime caches
+.cache/
+.pytest_cache/
 
 # Temporary files
 *.tmp

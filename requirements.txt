@@ -1,12 +1,16 @@
-numpy
-pandas
-scikit-learn
-matplotlib
-seaborn
-nltk
-gensim
-wordcloud
-tensorflow
-torch
-transformers
-datasets
+# Google Colab already provides many scientific Python packages. These ranges
+# document the project environment without replacing Colab's CUDA-enabled Torch.
+numpy>=1.26,<3
+scipy>=1.13,<2
+pandas>=2.2,<3
+scikit-learn>=1.5,<2
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
+gensim>=4.3,<5
+wordcloud>=1.9,<2
+langdetect==1.0.9
+psutil>=6,<8
+torch>=2.5,<3
+transformers>=4.46,<5
+datasets>=3.1,<5
+accelerate>=1.1,<2
