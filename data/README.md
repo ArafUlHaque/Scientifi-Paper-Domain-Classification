@@ -1,22 +1,29 @@
-# Dataset Storage
+# Kaggle Input Dataset
 
-The dataset is intentionally not stored in GitHub. Download Web of Science WOS-11967 version 6 manually from:
+Create one private Kaggle Dataset named `cse440-wos11967-assets`:
+
+```text
+cse440-wos11967-assets/
+|-- WOS-11967/
+|   |-- X.txt
+|   |-- YL1.txt
+|   |-- YL2.txt
+|   `-- Y.txt
+`-- glove.6B.100d.txt
+```
+
+Download WOS-11967 version 6 from:
 
 https://data.mendeley.com/datasets/9rw3vkcfy4/6
 
-Place the extracted files in Google Drive:
+Download `glove.6B.100d.txt` from the official Stanford GloVe 6B release.
+
+The notebook expects:
 
 ```text
-MyDrive/CSE440_Project/data/WOS-11967/
-|-- X.txt
-|-- YL1.txt
-|-- YL2.txt
-`-- Y.txt
+/kaggle/input/cse440-wos11967-assets/WOS-11967/X.txt
+/kaggle/input/cse440-wos11967-assets/WOS-11967/YL1.txt
+/kaggle/input/cse440-wos11967-assets/glove.6B.100d.txt
 ```
 
-- `X.txt` is the only model input.
-- `YL1.txt` is the only target.
-- `Y.txt` and `YL2.txt` are inspected only to document the child-label discrepancy.
-- Do not add raw data, GloVe files, or checkpoints to Git.
-
-The notebook verifies file existence, size, encoding, and SHA-256 hashes before analysis. It never downloads or silently modifies the raw dataset.
+`X.txt` is the only model input. `YL1.txt` is the only target. `Y.txt`, `YL2.txt`, and metadata are excluded to prevent target leakage.

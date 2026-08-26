@@ -1,14 +1,20 @@
-# Results Storage
+# Kaggle Results
 
-Generated results are saved in Google Drive under `MyDrive/CSE440_Project/results/` so Colab sessions can resume safely.
+The notebook writes generated artifacts under:
 
-Expected files and folders:
+```text
+/kaggle/working/cse440-results/
+|-- split_manifest.csv
+|-- tuning_results.csv
+|-- selected_configurations.csv
+|-- final_test_results.csv
+|-- figures/
+|-- histories/
+|-- checkpoints/
+|-- reports/
+`-- predictions/
+```
 
-- `split_manifest.csv`: frozen document IDs, labels, and split assignments
-- `tuning_results.csv`: every official and failed tuning run
-- `final_test_results.csv`: one locked test evaluation per required model
-- `figures/`: report-ready visualizations
-- `histories/`: compact neural training histories
-- `checkpoints/`: best neural checkpoints
+Quick Save after each experiment stage. Download this directory as a backup or create a private Kaggle Dataset named `cse440-project-artifacts` from the notebook output. Attach that dataset before a later session so completed tuning runs and checkpoints can be restored.
 
-Large generated artifacts are not committed to GitHub.
+Only compact notebook and documentation files belong in GitHub. Generated datasets and checkpoints remain outside the repository.
