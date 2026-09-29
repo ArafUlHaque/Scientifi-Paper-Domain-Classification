@@ -1,0 +1,11 @@
+model,representation,config_id,validation_accuracy,validation_macro_f1
+BERT Base,BERT WordPiece,BERT_3,0.945961,0.945496
+Bidirectional GRU,GloVe 6B 100d,B,0.899164,0.899633
+Bidirectional LSTM,GloVe 6B 100d,A,0.851253,0.851495
+Bidirectional SimpleRNN,GloVe 6B 100d,C,0.703064,0.682158
+GRU,GloVe 6B 100d,A,0.877994,0.877154
+LSTM,GloVe 6B 100d,B,0.853482,0.851801
+Logistic Regression,TF-IDF,LR_3,0.911978,0.910476
+Multinomial Naive Bayes,TF-IDF,NB_1,0.849582,0.845728
+Random Forest,TF-IDF,RF_1,0.90195,0.901717
+SimpleRNN,GloVe 6B 100d,B,0.491922,0.450986

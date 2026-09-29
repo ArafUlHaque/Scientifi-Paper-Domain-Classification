@@ -1,0 +1,11 @@
+label,precision,recall,f1-score,support
+Computer Science,0.7948,0.8089,0.8018,225.0
+Electrical Engineering,0.8596,0.8647,0.8622,170.0
+Psychology,0.9574,0.8401,0.8949,294.0
+Mechanical Engineering,0.8708,0.8166,0.8429,289.0
+Civil Engineering,0.8462,0.8703,0.858,316.0
+Medical Science,0.7879,0.856,0.8205,243.0
+Biochemistry,0.8237,0.8842,0.8529,259.0
+accuracy,0.8486,0.8486,0.8486,0.8486
+macro avg,0.8486,0.8487,0.8476,1796.0
+weighted avg,0.8521,0.8486,0.8492,1796.0

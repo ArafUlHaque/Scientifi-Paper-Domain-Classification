@@ -1,29 +1,26 @@
-# Kaggle Input Dataset
+# Dataset and inputs
 
-Create one private Kaggle Dataset named `cse440-wos11967-assets`:
+The study uses **WOS-11967**, version 6: 11,967 abstracts in seven parent domains.
 
-```text
-cse440-wos11967-assets/
-|-- WOS-11967/
-|   |-- X.txt
-|   |-- YL1.txt
-|   |-- YL2.txt
-|   `-- Y.txt
-`-- glove.6B.100d.txt
-```
+- [Web of Science dataset on Mendeley Data](https://data.mendeley.com/datasets/9rw3vkcfy4/6)
+- DOI: `10.17632/9rw3vkcfy4.6`
+- Dataset license: CC BY 4.0, as documented in the submitted report
+- [GloVe 6B vectors from Stanford](https://nlp.stanford.edu/projects/glove/): use `glove.6B.100d.txt`
 
-Download WOS-11967 version 6 from:
+Supply exactly one `WOS-11967/X.txt` under `/kaggle/input`. The notebook discovers its parent folder automatically. The input layout is:
 
-https://data.mendeley.com/datasets/9rw3vkcfy4/6
+| Relative path | Purpose |
+|---|---|
+| `WOS-11967/X.txt` | Abstract text |
+| `WOS-11967/YL1.txt` | Parent-domain target |
+| `glove.6B.100d.txt` | Pretrained GloVe vectors, alongside the WOS-11967 folder |
 
-Download `glove.6B.100d.txt` from the official Stanford GloVe 6B release.
+`Y.txt` and `YL2.txt` are not model inputs. Raw data and downloaded embeddings are excluded from Git history.
 
-The notebook expects:
+The completed notebook also requires a saved experiment bundle at `/kaggle/input/datasets/arafulhaque/cse440-project-artifacts/cse440-results`. Public access to that bundle has not been verified. See [reproduction notes](../docs/reproducibility.md) before running it.
 
-```text
-/kaggle/input/cse440-wos11967-assets/WOS-11967/X.txt
-/kaggle/input/cse440-wos11967-assets/WOS-11967/YL1.txt
-/kaggle/input/cse440-wos11967-assets/glove.6B.100d.txt
-```
+## Supplied split artifacts
 
-`X.txt` is the only model input. `YL1.txt` is the only target. `Y.txt`, `YL2.txt`, and metadata are excluded to prevent target leakage.
+`splits/split_manifest.csv` and `splits/split_manifest_metadata.json` are the author's separately supplied files. Their SHA-256 checksum agrees, and the manifest contains 11,967 unique document IDs. Split sizes are 8,376/1,795/1,796. No duplicate group crosses a partition.
+
+**Compatibility:** the supplied CSV names its columns `label_id`, `label_name`, and `duplicate_group_id`; the notebook expects `label`, `domain`, and `duplicate_group`. It is preserved unchanged for traceability. Matching aggregate counts alone does not prove that it is the exact manifest used for the displayed model scores. Compare it against the manifest inside the original Kaggle artifact bundle before using it to reproduce those scores.

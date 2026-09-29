@@ -1,0 +1,146 @@
+{
+  "notebook": "notebooks/scientific_paper_domain_classification.ipynb",
+  "notebook_sha256": "29a9975d643641ec03f9b207c51f21582677995a8b23618b15134128f0e76403",
+  "note": "Exports of saved notebook displays, not original full-precision Kaggle CSVs. No models were run.",
+  "artifacts": [
+    {
+      "file": "tuning_results_displayed.csv",
+      "notebook_cell_index": 106,
+      "precision": "percentages and seconds rounded to two decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "selected_configurations.csv",
+      "notebook_cell_index": 108,
+      "precision": "six decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "final_test_results.csv",
+      "notebook_cell_index": 125,
+      "precision": "six decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "classification_reports/logistic_regression.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/logistic_regression_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/multinomial_naive_bayes.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/multinomial_naive_bayes_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/random_forest.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/random_forest_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/simplernn.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/simplernn_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/gru.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/gru_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/lstm.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/lstm_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/bidirectional_simplernn.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/bidirectional_simplernn_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/bidirectional_gru.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/bidirectional_gru_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/bidirectional_lstm.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/bidirectional_lstm_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "classification_reports/bert_base.csv",
+      "notebook_cell_index": 127,
+      "precision": "four decimal places",
+      "source": "saved text/html output"
+    },
+    {
+      "file": "figures/bert_base_confusion_matrices.png",
+      "notebook_cell_index": 127,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "figures/final_model_comparison.png",
+      "notebook_cell_index": 129,
+      "source": "saved image/png output; decoded without redrawing"
+    },
+    {
+      "file": "top_confusion_pairs.csv",
+      "notebook_cell_index": 131,
+      "precision": "integer counts; top ten pairs",
+      "source": "saved text/html output"
+    }
+  ]
+}

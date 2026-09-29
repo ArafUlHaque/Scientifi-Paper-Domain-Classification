@@ -1,0 +1,31 @@
+Model,Configuration,Hyperparameters,Validation Accuracy,Validation Macro-F1,Training Time (seconds),Best Epoch
+Logistic Regression,LR_1,"{""C"": 0.5}",88.69%,88.46%,6.48,
+Logistic Regression,LR_2,"{""C"": 1.0}",90.08%,89.94%,8.55,
+Logistic Regression,LR_3,"{""C"": 2.0}",91.20%,91.05%,9.66,
+Multinomial Naive Bayes,NB_1,"{""alpha"": 0.1}",84.96%,84.57%,0.04,
+Multinomial Naive Bayes,NB_2,"{""alpha"": 0.5}",82.62%,81.22%,0.02,
+Multinomial Naive Bayes,NB_3,"{""alpha"": 1.0}",80.89%,78.79%,0.02,
+Random Forest,RF_1,"{""max_depth"": 50, ""n_estimators"": 200}",90.19%,90.17%,10.79,
+Random Forest,RF_2,"{""max_depth"": 100, ""n_estimators"": 300}",89.69%,89.73%,22.79,
+Random Forest,RF_3,"{""max_depth"": null, ""n_estimators"": 400}",90.03%,90.11%,31.18,
+SimpleRNN,A,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""SimpleRNN"", ""profile"": ""A"", ""trainable_glove"": false, ""units"": 64}",45.63%,41.64%,21.2,3.0
+SimpleRNN,B,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""SimpleRNN"", ""profile"": ""B"", ""trainable_glove"": false, ""units"": 128}",49.19%,45.10%,28.26,5.0
+SimpleRNN,C,"{""dropout"": 0.5, ""learning_rate"": 0.0005, ""model_name"": ""SimpleRNN"", ""profile"": ""C"", ""trainable_glove"": true, ""units"": 128}",48.86%,44.38%,20.52,2.0
+GRU,A,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""GRU"", ""profile"": ""A"", ""trainable_glove"": false, ""units"": 64}",87.80%,87.72%,34.42,13.0
+GRU,B,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""GRU"", ""profile"": ""B"", ""trainable_glove"": false, ""units"": 128}",87.47%,87.33%,26.62,9.0
+GRU,C,"{""dropout"": 0.5, ""learning_rate"": 0.0005, ""model_name"": ""GRU"", ""profile"": ""C"", ""trainable_glove"": true, ""units"": 128}",84.51%,83.96%,23.23,6.0
+LSTM,A,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""LSTM"", ""profile"": ""A"", ""trainable_glove"": false, ""units"": 64}",82.51%,82.01%,36.49,15.0
+LSTM,B,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""LSTM"", ""profile"": ""B"", ""trainable_glove"": false, ""units"": 128}",85.35%,85.18%,36.47,15.0
+LSTM,C,"{""dropout"": 0.5, ""learning_rate"": 0.0005, ""model_name"": ""LSTM"", ""profile"": ""C"", ""trainable_glove"": true, ""units"": 128}",83.18%,82.75%,34.62,11.0
+Bidirectional SimpleRNN,A,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""Bidirectional SimpleRNN"", ""profile"": ""A"", ""trainable_glove"": false, ""units"": 64}",58.05%,55.37%,35.27,3.0
+Bidirectional SimpleRNN,B,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""Bidirectional SimpleRNN"", ""profile"": ""B"", ""trainable_glove"": false, ""units"": 128}",61.50%,60.00%,39.21,3.0
+Bidirectional SimpleRNN,C,"{""dropout"": 0.5, ""learning_rate"": 0.0005, ""model_name"": ""Bidirectional SimpleRNN"", ""profile"": ""C"", ""trainable_glove"": true, ""units"": 128}",70.31%,68.22%,76.47,8.0
+Bidirectional GRU,A,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""Bidirectional GRU"", ""profile"": ""A"", ""trainable_glove"": false, ""units"": 64}",89.42%,89.20%,47.96,12.0
+Bidirectional GRU,B,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""Bidirectional GRU"", ""profile"": ""B"", ""trainable_glove"": false, ""units"": 128}",89.92%,89.96%,46.58,10.0
+Bidirectional GRU,C,"{""dropout"": 0.5, ""learning_rate"": 0.0005, ""model_name"": ""Bidirectional GRU"", ""profile"": ""C"", ""trainable_glove"": true, ""units"": 128}",85.52%,85.01%,34.68,6.0
+Bidirectional LSTM,A,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""Bidirectional LSTM"", ""profile"": ""A"", ""trainable_glove"": false, ""units"": 64}",85.13%,85.15%,51.68,14.0
+Bidirectional LSTM,B,"{""dropout"": 0.3, ""learning_rate"": 0.001, ""model_name"": ""Bidirectional LSTM"", ""profile"": ""B"", ""trainable_glove"": false, ""units"": 128}",84.51%,84.16%,45.98,9.0
+Bidirectional LSTM,C,"{""dropout"": 0.5, ""learning_rate"": 0.0005, ""model_name"": ""Bidirectional LSTM"", ""profile"": ""C"", ""trainable_glove"": true, ""units"": 128}",82.28%,82.07%,37.37,6.0
+BERT Base,BERT_1,"{""batch_size"": 8, ""epochs"": 3, ""learning_rate"": 1e-05, ""max_length"": 384, ""weight_decay"": 0.01}",93.04%,93.05%,1242.08,3.0
+BERT Base,BERT_2,"{""batch_size"": 8, ""epochs"": 3, ""learning_rate"": 2e-05, ""max_length"": 384, ""weight_decay"": 0.01}",94.26%,94.24%,1234.59,3.0
+BERT Base,BERT_3,"{""batch_size"": 8, ""epochs"": 3, ""learning_rate"": 3e-05, ""max_length"": 384, ""weight_decay"": 0.01}",94.60%,94.55%,1235.44,3.0

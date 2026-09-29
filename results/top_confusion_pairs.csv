@@ -1,0 +1,11 @@
+true_domain,predicted_domain,errors
+Biochemistry,Medical Science,11
+Mechanical Engineering,Civil Engineering,8
+Electrical Engineering,Mechanical Engineering,7
+Psychology,Medical Science,7
+Medical Science,Biochemistry,7
+Medical Science,Psychology,6
+Electrical Engineering,Civil Engineering,5
+Civil Engineering,Mechanical Engineering,4
+Mechanical Engineering,Computer Science,3
+Computer Science,Mechanical Engineering,3
