@@ -1,0 +1,12 @@
+{
+  "manifest_sha256": "805b04da648fd01729d17045be8c5d76acfaba4f9cdec207c53bbce4db526476",
+  "method": "two-stage stratified split",
+  "rows": 11967,
+  "seed": 42,
+  "source_sha256": {
+    "Y.txt": "291143bab8b07b412a3f61d1c0eadda9ff9b0ca2945e8fa19869e0fb2a00fad7",
+    "YL1.txt": "8360c1650fa3de9d8b363b9dd3d6d445a359c1bb26ae54986750298b7d961392",
+    "YL2.txt": "4524586479bfb3cdf96c0e1cc517537278bddb56f15d3f6331fb5e3a52c298ee"
+  },
+  "version": "wos11967_v6_seed42_v1"
+}

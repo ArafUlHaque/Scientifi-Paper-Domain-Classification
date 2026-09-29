@@ -1,13 +1,20 @@
-# Kaggle provides most of these packages in its Python image. The versions here
-# document the project dependencies without replacing Kaggle's GPU builds.
-numpy>=1.26,<3
-pandas>=2.2,<3
-scikit-learn>=1.5,<2
-matplotlib>=3.8,<4
-seaborn>=0.13,<1
-wordcloud>=1.9,<2
-tensorflow>=2.16,<3
-torch>=2.5,<3
-transformers>=4.46,<5
-accelerate>=1.1,<2
-joblib>=1.4,<2
+# Core versions shown in the completed notebook's environment output.
+# These describe the saved final-stage session, not a tested clean-install lockfile.
+# Python 3.12.13; Kaggle GPU build of torch reported 2.10.0+cu128.
+# Preserve Kaggle's matching CUDA/PyTorch build rather than replacing it blindly.
+numpy==2.0.2
+pandas==2.3.3
+scikit-learn==1.6.1
+tensorflow==2.20.0
+torch==2.10.0
+transformers==5.0.0
+
+# Used by the notebook; exact versions were not recorded in its environment table.
+matplotlib
+seaborn
+wordcloud
+accelerate
+joblib
+
+# Only needed to regenerate repository CSV exports from notebook HTML outputs.
+lxml
